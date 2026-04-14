@@ -1,0 +1,18 @@
+{
+  "name": "viral-content-saas",
+  "version": "1.0.0",
+  "description": "SaaS platform for generating viral YouTube/TikTok titles and thumbnails with AI",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["saas", "ai", "youtube", "tiktok", "thumbnails", "titles"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
